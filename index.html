@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>toDoList Project</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        .sub:focus{
+            background-color: red;
+        }
+    </style>
 </head>
 <body>
         <main class="d-flex justify-content-center align-items-center h-50 bg-warning" style="min-height: 78vh;">
@@ -16,7 +21,7 @@
                         <input class="form-control" type="text" id="text">
                     </div>
                     <div class="form-group">
-                        <input class="form-control" type="submit" value="submit" id="submit">
+                        <input class="form-control sub" type="submit" value="submit" id="submit">
                     </div>
                 </form>
                 <ol class="text-center" id="ul">FOOD ITEMS</ol>
