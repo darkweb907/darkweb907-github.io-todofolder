@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <style>
         .sub:focus{
-            background-color: red;
+            background-color: black;
+            color: white;
         }
     </style>
 </head>
@@ -24,7 +25,7 @@
                         <input class="form-control sub" type="submit" value="submit" id="submit">
                     </div>
                 </form>
-                <ol class="text-center" id="ul">FOOD ITEMS</ol>
+                <ol class="text-center mr-5" id="ul">FOOD ITEMS</ol>
             </div>
         </main>
  <script src="../js/jquery-3.4.1.js"></script>
@@ -37,6 +38,7 @@
         var submit=document.createTextNode(text)
         var li=document.createElement("li")
         li.setAttribute("class", "list-group-item")
+        li.style.backgroundColor="light blue"
         li.appendChild(submit)
         document.getElementById("ul").appendChild(li)        
         return false;        
