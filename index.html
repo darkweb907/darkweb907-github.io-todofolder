@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toDoList Project</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+        <main class="d-flex justify-content-center align-items-center h-50 bg-warning" style="min-height: 78vh;">
+            <div class="jumbotron w-50 h-100 bg-info">
+                <form action="">
+                    <div class="h1 text-center mb-5">TodoList Project</div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" id="text">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="submit" value="submit" id="submit">
+                    </div>
+                </form>
+                <ol class="text-center" id="ul">FOOD ITEMS</ol>
+            </div>
+        </main>
+ <script src="../js/jquery-3.4.1.js"></script>
+ <script src="../js/bootstrap.bundle.min.js"></script>
+ <script>
+     var submit=document.getElementById("submit")
+    
+     submit.onclick= function(){
+        var text=document.getElementById("text").value
+        var submit=document.createTextNode(text)
+        var li=document.createElement("li")
+        li.setAttribute("class", "list-group-item")
+        li.appendChild(submit)
+        document.getElementById("ul").appendChild(li)        
+        return false;        
+    }
+ </script>   
+</body>
+</html>
